@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.slide-in{
+    background-color: aqua;
+    width:100px;
+    height: 40px;
+    margin: 40px;
+}
+
+.slide-in:hover {
+    background-color: blue;
+  animation: slide-in 1s;
+}
+
+
+
+
+@keyframes slide-in {
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
